@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Homia | Your Home Sweet Home</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -60,6 +60,7 @@
 
             .m-b-md {
                 margin-bottom: 30px;
+                font-weight: bold;
             }
         </style>
     </head>
