@@ -11,9 +11,15 @@ class ProductController extends Controller
     {
         return Products::with("images")->find($id);
     }
-    public function showAll()
-    {
-        return Products::take(100)->get();
+    public function showAll(Request $request)
+    {   
+        $products = Products::where("name","!=","");
+        $s = $request->input('s');
+        if(!empty($s))
+            $products = $products->where('name','like',$s);
+        $products = $products->take(100)->get();
+
+        return $products;
     }
     public function landing()
     {
