@@ -16,7 +16,7 @@ class ProductImages extends Model
         if (filter_var($value, FILTER_VALIDATE_URL)) {
             return $value;
         } else {
-            return asset('images/' . $value);
+            return asset('storage/' . $value);
         }
     }
 }
