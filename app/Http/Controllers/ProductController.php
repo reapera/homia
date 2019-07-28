@@ -16,7 +16,7 @@ class ProductController extends Controller
         $products = Products::where("name","!=","");
         $s = $request->input('s');
         if(!empty($s))
-            $products = $products->where('name','like',$s);
+            $products = $products->where('name','like','%'.$s.'%');
         $products = $products->take(100)->get();
 
         return $products;
