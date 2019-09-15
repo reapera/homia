@@ -10,5 +10,5 @@ RUN docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-di
 
 RUN docker-php-ext-install zip
 
-
+RUN apt-get install composer
 WORKDIR /var/www
