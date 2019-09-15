@@ -52,7 +52,7 @@
     
     @if (count($errors) > 0)
     @foreach ($errors->all() as $error)
-    swal("Oops!", {{$error}}, "error");
+    swal("Oops!", "{{$error}}", "error");
     @endforeach
     @endif
     @if (session()->has('message'))
