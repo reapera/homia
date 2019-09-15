@@ -23,6 +23,6 @@ class ProductController extends Controller
     }
     public function landing()
     {
-        return view('welcome');
+        return view('probs');
     }
 }

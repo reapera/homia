@@ -11,7 +11,9 @@
 |
 */
 
-Route::get('/', 'ProductController@landing');
+Route::get('/', 'LandingController@landing');
+Route::post('/probs', 'LandingController@insertProbs');
+
 Route::get('/product', 'ProductController@showAll');
 Route::get('/product/{id}', 'ProductController@show');
 
