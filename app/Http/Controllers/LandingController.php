@@ -9,7 +9,7 @@ class LandingController extends Controller
 {
     public function landing()
     {
-        return view('probs');
+        return view('welcome');
     }
     public function insertProbs(Request $request)
     {
