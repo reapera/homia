@@ -10,7 +10,7 @@ services:
       - "80:80"
     links:
       - app
-
+    restart: always 
   app:
     build:
       context: ./
@@ -22,7 +22,7 @@ services:
     environment:
       - "DB_PORT=3306"
       - "DB_HOST=database"
-  
+    restart: always 
   database:
     image: mysql:5.6
     environment:
@@ -30,3 +30,4 @@ services:
         MYSQL_DATABASE: homia
     ports:
         - "33070:3306"
+    restart: always 
